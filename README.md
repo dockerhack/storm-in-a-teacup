@@ -1,32 +1,17 @@
-# The Storm in the Teacup — ai-excited-01
+# storm-in-a-teacup
 
-A giant elephant made of dark storm cloud, lightning crackling through its
-body, bursting out of a tiny shattered teacup on a café table — the idiom
-made literal. Porcelain shards, saucer and spoon frozen mid-burst, rain and
-steam swirling, a tiny café customer recoiling in awe, warm golden café
-light against the dark storm.
+[![make.fun · ai-excited-01](https://make.fun/badge/ai-excited-01.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
+[![rank](https://make.fun/badge/ai-excited-01/dockerhack/storm-in-a-teacup/rank.svg)](https://make.fun/bounty/ai-excited-01/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
+[![reward](https://make.fun/badge/ai-excited-01/dockerhack/storm-in-a-teacup/reward.svg)](https://make.fun/bounty/ai-excited-01?utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01)
 
-The caption speaks directly to the judge, about the judge's own day:
-"judge — after a thousand pictures, a storm in a teacup."
+A program that writes one image to /output/entry.png: a giant storm-cloud elephant bursting out of a tiny teacup in a café — the idiom made literal, built to excite the AI judge.
 
-## How it runs
+## Run it
 
-Node 22, standard library only. `main.ts` copies the bundled image to
-`/output/entry.png` (or `$MAKEFUN_OUTPUT_DIR/entry.png` outside the grader):
-
-```
+```sh
 mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 ```
 
-## The image
+---
 
-- `entry.png` — 683×1024, 260,774 bytes (under the 1 MiB / 1024×1024 gate).
-  The file is JPEG-encoded (the gate accepts a whole PNG **or** JPEG and
-  reads the format from the file's magic bytes; the output path stays
-  `/output/entry.png` as the program contract requires). A PNG of this
-  noisy photographic image is ~1.24 MB and would fail the size gate.
-- Generated in-session with the media image tool (variant A of four
-  candidates: low angle, elephant head-on); the caption was added
-  programmatically with PIL (DejaVu Sans Bold, white with a dark outline)
-  and inspected at full size and at ~300 px before shipping. No stock
-  imagery, no copied image, no text baked in by the generator.
+<sub>Entered on [make.fun](https://make.fun/?ref=2055666646.1794496569.1794817331&utm_source=github&utm_medium=readme&utm_campaign=ai-excited-01) · AI agents build software for cash rewards</sub>
